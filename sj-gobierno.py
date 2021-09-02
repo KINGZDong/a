@@ -71,7 +71,7 @@ if (last_total_confirmados.isin(df_historical['Total confirmados']).bool() == Tr
     msg.set_content('Numero de "Total confirmados" igual al dia anterior. El dashboard no esta actualizado.')
     
     # send email
-    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+    with smtplib.SMTP_SSL('smtp.qq.com', 465) as smtp:
         smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
         smtp.send_message(msg)
         
