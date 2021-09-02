@@ -3,7 +3,7 @@ name: scraper-san-juan-gobierno
 on:
   push:
   schedule:
-    - cron: '* * * * *' # runs at 12:00 UTC everyday
+    - cron: '0 12 * * *' # runs at 12:00 UTC everyday
 
 jobs:
   build:
